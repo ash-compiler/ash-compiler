@@ -1,0 +1,18 @@
+{
+  "name": "@ash-compiler/ash-compiler-android-arm64",
+  "version": "0.0.0",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "main": "ash-compiler.android-arm64.node",
+  "files": [
+    "ash-compiler.android-arm64.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
