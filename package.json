@@ -9,7 +9,9 @@
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
+    "test": "vitest",
+    "test:run": "vitest --run",
+    "test:ui": "vitest --ui",
     "version": "napi version"
   },
   "napi": {
@@ -31,7 +33,8 @@
   },
   "devDependencies": {
     "@napi-rs/cli": "^2.10.0",
-    "ava": "^4.3.0"
+    "@vitest/ui": "^0.17.0",
+    "vitest": "^0.17.0"
   },
   "engines": {
     "node": ">= 10"
