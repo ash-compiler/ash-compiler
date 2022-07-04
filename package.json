@@ -9,9 +9,8 @@
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
-    "test": "vitest",
-    "test:run": "vitest --run",
-    "test:ui": "vitest --ui",
+    "test": "jest",
+    "test:run": "jest --reporters=\"default\" --reporters=\"github-actions\"",
     "version": "napi version"
   },
   "napi": {
@@ -33,7 +32,10 @@
   },
   "devDependencies": {
     "@napi-rs/cli": "^2.10.0",
+    "@swc/core": "^1.2.208",
+    "@swc/jest": "^0.2.21",
     "@vitest/ui": "^0.17.0",
+    "jest": "^28.1.2",
     "vitest": "^0.17.0"
   },
   "engines": {
